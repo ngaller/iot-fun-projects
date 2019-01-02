@@ -32,13 +32,13 @@ void setup() {
 }
 
 void loop() {
+  // put your main code here, to run repeatedly:  
   if(up.handleInput()) {
     rtc_increase();
   }
   if(down.handleInput()) {
     rtc_decrease();
-  }
-  // put your main code here, to run repeatedly:  
+  }  
   if(rtc_need_update()) {
     int hour, min;
     rtc_get_time(hour, min);

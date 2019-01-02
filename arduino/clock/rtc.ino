@@ -1,4 +1,4 @@
-static int last_update = 0;
+static time_t last_update = 0;
 static DS3231 rtc;
 
 bool rtc_need_update() {
